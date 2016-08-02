@@ -1,0 +1,9 @@
+[mysqld]
+user = root
+password = 123456
+host = 127.0.0.1
+database = DelftX
+
+[data]
+path = /data/.../course_log/
+remove_filtered_logs = 0
