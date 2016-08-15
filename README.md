@@ -24,7 +24,7 @@
 		For courses starting prior to March 2015, we also need to put the following file here.
 		* DelftX-```course_code```-prod.mongo
 
-		**This step is very important.**
+		**The above step is very important.**
 
 	* create a folder named as ```surveys``` and upload the following survey files here:
 		* anon-ids.csv (storing the mapping between learners' anonymised ID used in Qualtrics and their edX ID)
@@ -57,11 +57,11 @@
 
 ## Running the scripts
 
-- 3.1 Go to the folder storing the translation codes (i.e., ```$PATH$/DelftX-Daily-Database/```), run the following command to build the DelftX database:
+1. Go to the folder storing the translation codes (i.e., ```$PATH$/DelftX-Daily-Database/```), run the following command to build the DelftX database:
 
 	```mysql -u root -p --local-infile=1 < moocdb.sql```
 
-- 3.2 Editing the config file ```config```
+2. Editing the config file ```config```
 
 	```
     [mysqld]
@@ -91,7 +91,7 @@
         * The ```metadata_update_list``` stores the course_code of courses whose metadata (e.g., course structure, learners' demographic, learners' certification) needs to be processed (for the first time) or updated. **In other words, if we want to import a new course or update the metadata of a course that have been processed before, we should put the course_code of that course here.**
         * The ```survey_update_map``` stores the course_code of courses (and the indexes of learner's ID in the pre/post surveys in the format of JSON) whose survey data needs to be processed (for the first time) or updated. **In other words, if we want to import a new course or update the survey data of a course that have been processed before, we should put the course_code of that course here.**
 
-- Running the translation codes by using following command:
+3. Running the translation codes by using following command:
 
 	```python main.py config```
 
