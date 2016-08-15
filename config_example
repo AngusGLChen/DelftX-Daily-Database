@@ -1,0 +1,22 @@
+[mysqld]
+user = root
+password = 123456
+host = 127.0.0.1
+database = DelftX
+
+[data]
+path = /data/course_log/
+remove_filtered_logs = 0
+
+log_update_list = ["EX101x-3T2015"]
+metadata_update_list = ["Calc001x-2T2015",
+ 						"CTB3365DWx-3T2014",
+ 						"EX101x-3T2015"
+                        ]
+                        
+survey_update_map = { "Calc001x-2T2015":["13","10"],
+					  "CTB3365DWx-3T2014":["108","139"],
+					  "EX101x-1T2015":["13","10"],
+					  "EX101x-3T2015":["10","10"],
+					  "FP101x-3T2014":["103","118"]                    
+                    }
