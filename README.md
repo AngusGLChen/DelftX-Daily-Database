@@ -14,7 +14,7 @@
 
 2. For each course, create a folder under the the ``course_log`` folder named with its course_code (e.g., ```FP101x-3T2015``` and ```EX101x-3T2015```). Within each course folder, 
 
-    *create a folder named as ```metadata``` and upload the following extracted course metadata files here:
+    * create a folder named as ```metadata``` and upload the following extracted course metadata files here:
 		* DelftX-```course_code```-auth_user-prod-analytics.sql
 		* DelftX-```course_code```-auth_userprofile-prod-analytics.sql
 		* DelftX-```course_code```-certificates_generatedcertificate-prod-analytics.sql
@@ -26,7 +26,7 @@
 
 		**This step is very important.**
 
-	*create a folder named as ```surveys``` and upload the following survey files here:
+	* create a folder named as ```surveys``` and upload the following survey files here:
 		* anon-ids.csv (storing the mapping between learners' anonymised ID used in Qualtrics and their edX ID)
 		* pre-survey.csv (storing learners' responses to the pre-survey)
 		* post-survey.csv (storing learners' responses to the post-survey)
