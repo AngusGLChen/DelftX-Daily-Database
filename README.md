@@ -1,17 +1,18 @@
 # Steps for Building the Database
 
-## 1. Setting the environment
+## Setting the environment
 
-- Download and install [MySQL](http://dev.mysql.com/downloads/mysql/)
+1. Download and install [MySQL](http://dev.mysql.com/downloads/mysql/)
 
-- Download and install [Python (Version 2.7)](https://www.python.org/downloads/)
+2. Download and install [Python (Version 2.7)](https://www.python.org/downloads/)
 
-- Download and install python packages, including: [Connector/Python (Version 2.1.3)](https://dev.mysql.com/doc/connector-python/en/connector-python-installation.html), [pytz](https://pypi.python.org/pypi/pytz?) and [pymongo](https://api.mongodb.com/python/current/). To test whether a package (e.g., ```pytz```) is installed successfully, you may run ```python -c "import pytz"``` in the terminal.
+3. Download and install required Python packages, including: [Connector/Python (Version 2.1.3)](https://dev.mysql.com/doc/connector-python/en/connector-python-installation.html), [pytz](https://pypi.python.org/pypi/pytz?) and [pymongo](https://api.mongodb.com/python/current/). To test whether a package (e.g., ```pytz```) is installed successfully or not, you may run ```python -c "import pytz"``` in the terminal.
 
-## 2. Uploading the course data
+## Uploading the course data
 
-- Create a folder named ```course_log``` and a folder named ```daily_logs``` under the ```course_log``` folder (i.e., the path for the ```daily_logs``` folder should be ```$PATH$/course_log/daily_logs/```). After that, upload all of the daily log files (in the form of .gzip) to the ```daily_logs``` folder.
-- For each course, create a folder under the the ``course_log`` folder named as its course_code (e.g., "FP101x-3T2015" and "EX101x-3T2015"). Within each course folder, 
+1. Create a folder named ```course_log``` and a folder named ```daily_logs``` under the ```course_log``` folder (i.e., the path for the ```daily_logs``` folder should be ```$PATH$/course_log/daily_logs/```). After that, upload all of the daily log files (in the form of .gzip) to the ```daily_logs``` folder.
+
+2. For each course, create a folder under the the ``course_log`` folder named with its course_code (e.g., ```FP101x-3T2015``` and ```EX101x-3T2015```). Within each course folder, 
 
     *create a folder named as ```metadata``` and upload the following extracted course metadata files here:
 		* DelftX-```course_code```-auth_user-prod-analytics.sql
@@ -54,7 +55,7 @@
 	        	--  ...
 	```
 
-## 3. Running the scripts
+## Running the scripts
 
 - 3.1 Go to the folder storing the translation codes (i.e., ```$PATH$/DelftX-Daily-Database/```), run the following command to build the DelftX database:
 
@@ -120,7 +121,7 @@ Our database schema is adapted from the [MOOCdb Model](http://moocdb.csail.mit.e
 <img src="./ReadMeResources/DelftXDatabaseSchema.png"/ width = "700" height = "600">
 </div>
 
-## 1. Video Mode
+## Video Mode
 
 The Video Mode has only one table, i.e., video_interaction, which stores the interaction information between learners and course lecture videos.
 
@@ -130,7 +131,7 @@ The Video Mode has only one table, i.e., video_interaction, which stores the int
 <img src="./ReadMeResources/videomode.png"/ width = "160" height = "300">
 </div>
 
-## 2. Quiz Mode
+## Quiz Mode
 
 The Quiz Mode has 4 tables, i.e., quiz_questions, submissions, assessments and quiz_sessions.
 
@@ -141,7 +142,7 @@ The Quiz Mode has 4 tables, i.e., quiz_questions, submissions, assessments and q
 </div>
 
 
-## 3. Forum Mode
+## Forum Mode
 
 The Forum Mode has 2 tables, i.e., forum_interaction and forum_sessions.
 
@@ -152,7 +153,7 @@ The Forum Mode has 2 tables, i.e., forum_interaction and forum_sessions.
 </div>
 
 
-## 4 Survey Mode
+## Survey Mode
 
 The Survey Mode has 2 tables, i.e., survey_descriptions and survey_responses.
 
@@ -163,7 +164,7 @@ The Survey Mode has 2 tables, i.e., survey_descriptions and survey_responses.
 </div>
 
 
-## 5. Learner Mode
+## Learner Mode
 
 The Learner Mode has 6 tables, i.e., course_elements, courses, learner_index, sessions, learner_demographic and course_learner.
 
