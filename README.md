@@ -57,11 +57,11 @@
 
 ## Running the scripts
 
-1. Go to the folder storing the translation codes (i.e., ```$PATH$/DelftX-Daily-Database/```), run the following command to build the DelftX database:
+1. Go to the folder storing the translation codes (i.e., ```$PATH$/DelftX-Daily-Database/```), and run the following command to build the DelftX database:
 
 	```mysql -u root -p --local-infile=1 < moocdb.sql```
 
-2. Editing the config file ```config```
+2. Edit the config file ```config```
 
 	```
     [mysqld]
@@ -84,12 +84,12 @@
     ```    
     
     * The ```[mysqld]``` section stores required information to establish the database connection. Change the ```user``` and ```password``` to your account.
-    * The ```[data]``` section stores required information to process the data, including:
+    * The ```[data]``` section stores information required to process the course data, including:
         * The ```path``` points to the ```course_log``` folder (e.g ```$PATH$/course_log/```)
-        * The ```remove_filtered_logs``` indicates whether the extracted daily log files generated during the data processing process should be removed (setting to ```1```) or not (setting to ```1```).
-        * The ```log_update_list``` stores the course_code of courses in which learners daily activities (e.g., watching videos, solving quizzes, posting in discussion forum) need to be re-imported into the database.
-        * The ```metadata_update_list``` stores the course_code of courses whose metadata (e.g., course structure, learners' demographic, learners' certification) needs to be processed (for the first time) or updated. **In other words, if we want to import a new course or update the metadata of a course that have been processed before, we should put the course_code of that course here.**
-        * The ```survey_update_map``` stores the course_code of courses (and the indexes of learner's ID in the pre/post surveys in the format of JSON) whose survey data needs to be processed (for the first time) or updated. **In other words, if we want to import a new course or update the survey data of a course that have been processed before, we should put the course_code of that course here.**
+        * The ```remove_filtered_logs``` indicates whether the extracted daily log files generated when processing the data should be removed (setting to ```1```) or not (setting to ```0```).
+        * The ```log_update_list``` (in the format of list) stores courses in which learners' daily activities (e.g., watching videos, solving quizzes, posting in discussion forum) need to be re-imported into the database.
+        * The ```metadata_update_list``` (in the format of list) stores courses whose metadata (e.g., course structure, learners' demographic, learners' certification) needs to be processed (for the first time) or updated. **In other words, if we want to import a new course or update the metadata of a course that have been processed before, we should put the course here.**
+        * The ```survey_update_map``` (in the format of JSON) stores courses (and the indexes of learner's ID in the pre/post surveys) whose survey data needs to be processed (for the first time) or updated. **In other words, if we want to import a new course or update the survey data of a course that have been processed before, we should put the coursehere.**
 
 3. Running the translation codes by using following command:
 
