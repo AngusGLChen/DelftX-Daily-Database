@@ -2,9 +2,9 @@
 
 ## 1. Setting the environment
 
-1.1 Download and install [MySQL](http://dev.mysql.com/downloads/mysql/)
-1.2 Download and install [Python (Version 2.7)](https://www.python.org/downloads/)
-1.3 Download and install python packages, including: [Connector/Python (Version 2.1.3)](https://dev.mysql.com/doc/connector-python/en/connector-python-installation.html), [pytz](https://pypi.python.org/pypi/pytz?) and [pymongo](https://api.mongodb.com/python/current/). To test whether a package (e.g., ```pytz```) is installed successfully, you may run ```python -c "import pytz"``` in the terminal.
+- Download and install [MySQL](http://dev.mysql.com/downloads/mysql/)
+- Download and install [Python (Version 2.7)](https://www.python.org/downloads/)
+- Download and install python packages, including: [Connector/Python (Version 2.1.3)](https://dev.mysql.com/doc/connector-python/en/connector-python-installation.html), [pytz](https://pypi.python.org/pypi/pytz?) and [pymongo](https://api.mongodb.com/python/current/). To test whether a package (e.g., ```pytz```) is installed successfully, you may run ```python -c "import pytz"``` in the terminal.
 
 ## 2. Uploading the course data
 
