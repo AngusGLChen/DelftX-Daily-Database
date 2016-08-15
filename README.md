@@ -113,7 +113,7 @@ We recommend to use [MySQL Workbench](http://dev.mysql.com/downloads/workbench/)
 
 # Database Schema
 
-Our database schema is adapted from the [MOOCdb Model](http://moocdb.csail.mit.edu/), which consists of 5 major modules, namely Video Mode, Quiz Mode, Forum Mode, Learner Mode and Survey Mode, as depicted in Figure 1.
+Our database schema is adapted from the [MOOCdb Model](http://moocdb.csail.mit.edu/), which consists of 5 major modules, namely ```Video Mode```, ```Quiz Mode```, ```Forum Mode```, ```Learner Mode``` and ```Survey Mode```, as depicted in Figure 1.
 
 <!--![Alt](./ReadMeResources/DelftXDatabaseSchema.png "Title")-->
 
@@ -123,7 +123,7 @@ Our database schema is adapted from the [MOOCdb Model](http://moocdb.csail.mit.e
 
 ## Video Mode
 
-The Video Mode has only one table, i.e., video_interaction, which stores the interaction information between learners and course lecture videos.
+The Video Mode has only one table, i.e., video_interaction.
 
 <!--![Alt](./ReadMeResources/videomode.png "Title")-->
 
