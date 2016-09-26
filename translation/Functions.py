@@ -147,6 +147,13 @@ def getDayDiff(beginDate,endDate):
     return count
 
 
+def getNextDay(current_day):
+    format="%Y-%m-%d"
+    oneday = datetime.timedelta(days=1)
+    next_day = current_day + oneday   
+    return next_day
+
+
 def cmp_datetime(a_datetime, b_datetime):    
     utc=pytz.UTC    
     a_datetime = a_datetime.replace(tzinfo=utc)

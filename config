@@ -7,11 +7,20 @@ database = DelftX
 [data]
 path = /data/course_log/
 remove_filtered_logs = 0
-
-log_update_list = ["EX101x-3T2015"]
+log_update_list = ["Calc001x-2T2015"]
 metadata_update_list = ["Calc001x-2T2015",
- 						"CTB3365DWx-3T2014",
- 						"EX101x-3T2015"
+						"Calc001x-2T2016",
+						"CTB3365DWx-1T2016",
+						"CTB3365DWx-3T2014",						
+ 						"CTB3365STx-1T2016",
+ 						"EX101x-1T2015",
+ 						"EX101x-3T2015",
+ 						"FP101x-3T2014",
+ 						"FP101x-3T2015",
+ 						"Frame101x-1T2015",
+ 						"RI101x-1T2016",
+ 						"RI101x-3T2014﻿",
+ 						"TBP01x-3T2015"
                         ]
                         
 survey_update_map = { "Calc001x-2T2015":["13","10"],
